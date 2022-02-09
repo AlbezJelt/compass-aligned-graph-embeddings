@@ -23,10 +23,10 @@ This library uses the sparql endpoint to directly querying the graph with two sp
         FILTER(CONTAINS(STR(?o), "wikidata.org/entity/Q"))
     }
     ```
-**By keeping only the entities and excluding the predicates** two corpora are constructed using the extracted walks.
+**By keeping only the entities and excluding the predicates** two corpora ([1]('https://github.com/AlbezJelt/compass-aligned-graph-embeddings/raw/main/data/dbpedia_walks_final.txt'), [2]('https://github.com/AlbezJelt/compass-aligned-graph-embeddings/raw/main/data/dbpedia_walks_final.txt')) are constructed using the extracted walks.
 ## Phase 2: Preprocessing
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AlbezJelt/pyrdf2vec-for-graph-embeddings/blob/main/notebooks/Preprocessing.ipynb)  
-In the second phase all the DBpedia walks entities are converted to Wikidata entities following the owl:sameAs links. This ensure that the two corpora share the same vocabulary, which is a necessary condition to use Word2Vec technique.  
+In the second phase all the DBpedia walks entities are converted to Wikidata entities following the owl:sameAs links ([converted walks]('https://github.com/AlbezJelt/compass-aligned-graph-embeddings/raw/main/data/dbpedia_walks_final.txt')). This ensure that the two corpora share the same vocabulary, which is a necessary condition to use Word2Vec technique.  
 Finally, a dictionary is built that maps each Wikidata entity to its label (usefull to translate each entity in natural language in the next step).
 
 ## Phase 3: CADE embeddings
