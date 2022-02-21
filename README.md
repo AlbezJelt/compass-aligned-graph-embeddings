@@ -2,7 +2,8 @@
 Testing graph embedding extracted from two different knowledge graphs and aligend with CADE as a framwork to:
 - discover new entity link between graphs;
 - merge knowledge graphs;  
-  
+
+[Full report](https://github.com/AlbezJelt/compass-aligned-graph-embeddings/blob/main/report/compass-aligned-graph-embeddings.pdf) (in italian) avaiable in the repository.  
 Project for AI course 2021/22, master degree in computer science, [UNIMIB](https://www.unimib.it/).
 ## Phase 1: Walk extraction
 
